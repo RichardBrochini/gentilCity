@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>.:Gentil City:.</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css" />
+	<script src="js/swfobject.js"></script>
+	<script src="js/Swf.class.js"></script>
+	<script src="js/Xsl.class.js"></script>
+	<script src="js/Ajax.class.js"></script>
+	<body>
+		<center>
+			<table>
+				<tr>
+					<td>
+						<div id="jogo"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>
+							<img src="editporto.jpg" />
+						</center>
+					</td>
+				</tr>
+			</table>
+		</center>
+		<script>
+			var m = new Swf();
+			m.setDiv("jogo");
+			m.setLargura("800");						
+			m.setAltura("600");
+			m.setSwf("swf/citygentil.swf");
+			m.gerar();
+		</script>
+	</body>
+</html>
